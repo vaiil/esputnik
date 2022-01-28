@@ -28,7 +28,7 @@ abstract class EntityList
     /**
      * @return \ArrayIterator
      */
-    private function getList()
+    public function getList()
     {
         return $this->list;
     }
