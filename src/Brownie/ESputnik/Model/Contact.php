@@ -32,6 +32,8 @@ use Brownie\ESputnik\Model\Base\Channel;
  * @method int          getAddressBookId()                  Get address book id.
  * @method OrdersInfo   getOrdersInfo()                     Get orders info.
  * @method Grouplist    getGroupList()                      Get group list.
+ * @method string       getLanguageCode()                   Get language code
+ * @method string       getTimeZone()                       Get timezone
  */
 class Contact extends ArrayList
 {
@@ -46,7 +48,9 @@ class Contact extends ArrayList
         'contactKey' => null,
         'addressBookId' => null,
         'ordersInfo' => null,
-        'groupList' => null
+        'groupList' => null,
+        'languageCode' => null,
+        'timeZone' => null
     ];
 
     public function getKeyName()
