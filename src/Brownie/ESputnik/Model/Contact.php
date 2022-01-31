@@ -121,6 +121,14 @@ class Contact extends ArrayList
             $data['groups'] = $this->getGroupList()->toArray();
         }
 
+        if ($this->getLanguageCode()) {
+            $data['languageCode'] = $this->getLanguageCode();
+        }
+
+        if ($this->getTimeZone()) {
+            $data['timeZone'] = $this->getTimeZone();
+        }
+
         return $data;
     }
 }
