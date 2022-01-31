@@ -1,12 +1,10 @@
 ESputnik
 ========
 
-[![Latest Stable Version](https://poser.pugx.org/ossbrownie/esputnik/v/stable)](https://packagist.org/packages/ossbrownie/esputnik)
-[![Total Downloads](https://poser.pugx.org/ossbrownie/esputnik/downloads)](https://packagist.org/packages/ossbrownie/esputnik)
-[![Latest Unstable Version](https://poser.pugx.org/ossbrownie/esputnik/v/unstable)](https://packagist.org/packages/ossbrownie/esputnik)
-[![License](https://poser.pugx.org/ossbrownie/esputnik/license)](https://packagist.org/packages/ossbrownie/esputnik)
-
 Marketing automation system ESputnik.
+
+This project is a fork of [ossbrownie/esputnik](https://github.com/ossbrownie/esputnik).
+Now it works using overriding the original one through `repostiotries` section of composer.json.
 
 ## curl
 A basic CURL wrapper for PHP (see [http://php.net/curl](http://php.net/curl) for more information about the libcurl extension for PHP)
@@ -21,8 +19,15 @@ Add a line to your "require" section in your composer configuration:
 ```json
 {
     "require": {
-        "ossbrownie/esputnik": "0.1.3"
-    }
+        "ossbrownie/esputnik": "0.1.5"
+    },
+    
+    "repositories": [
+        {
+            "url": "https://github.com/vaiil/esputnik.git",
+            "type": "git"
+        }
+    ]
 }
 ```
 
