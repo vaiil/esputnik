@@ -22,6 +22,8 @@ use Brownie\ESputnik\Model\Base\Channel;
  * @method Contact      setAddressBookId($addressBookId)    Set address book id.
  * @method Contact      setOrdersInfo($ordersInfo)          Set order info.
  * @method Contact      setGroupList($groups)               Set group list.
+ * @method Contact      setLanguageCode($languageCode)      Set language code
+ * @method Contact      setTimeZone($timeZone)              Set timezone
  * @method int          getId()                             Get id.
  * @method string       getFirstName()                      Get first name.
  * @method string       getLastName()                       Get last name.
