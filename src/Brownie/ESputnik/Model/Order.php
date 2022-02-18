@@ -79,7 +79,7 @@ class Order extends ArrayList
      */
     public function setDate($date)
     {
-        $this->fields['date'] = date('Y-m-d\TH:m:s', strtotime($date));
+        $this->fields['date'] = date('Y-m-d\TH:i:s', strtotime($date));
         return $this;
     }
 
